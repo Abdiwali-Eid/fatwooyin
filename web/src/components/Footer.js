@@ -10,7 +10,9 @@ function Footer() {
   return (
     <FooterStyles>
       <div className="container">
-        <Logo />
+
+        <div className='horizontal'>
+            <Logo />
         <ParagraphText className="footer__text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat neque
           commodi perspiciatis quibusdam delectus voluptas ab eos natus laborum!
@@ -24,6 +26,7 @@ function Footer() {
             </li>
           ))}
         </ul>
+        </div>
         <ul className="footer__socialList">
           {socialLinks.map((item) => (
             <li key={item.name}>
@@ -31,6 +34,8 @@ function Footer() {
             </li>
           ))}
         </ul>
+      
+      
         <ParagraphText className="copyright">
           © Fatwo {new Date().getFullYear()}. All rights
           reserved
