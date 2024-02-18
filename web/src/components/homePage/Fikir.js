@@ -9,7 +9,7 @@ function Fikir() {
   const data = useStaticQuery(graphql`
     {
       allSanityBlog(
-        filter: { categories: { elemMatch: { title: { eq: "Fikir" } } } }
+        filter: { categories: { elemMatch: { title: { eq: "Salaad" } } } }
       ) {
         nodes {
           title

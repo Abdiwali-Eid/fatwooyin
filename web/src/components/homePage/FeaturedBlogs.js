@@ -49,7 +49,7 @@ function FeaturedBlogs() {
 
     <FeaturedBlogsStyles>
      
-      <SectionTitle>Featured Blogs</SectionTitle>
+      <SectionTitle>Su'aalaha muhiimka ah </SectionTitle>
  
       {/* <ParagraphText className="featuredBlogs__text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, nemo

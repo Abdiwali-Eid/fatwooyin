@@ -5,11 +5,11 @@ import BlogGrid from '../blog/BlogGrid';
 import ParagraphText from '../typography/ParagraphText';
 import { SectionTitle } from '../typography/Title';
 
-function Releted() {
+function Salaad() {
   const data = useStaticQuery(graphql`
     {
       allSanityBlog(
-        filter: { categories: { elemMatch: { title: { eq: "Dahaaradda" } } } }
+        filter: { categories: { elemMatch: { title: { eq: "Salaad" } } } }
       ) {
         nodes {
           title
@@ -57,4 +57,4 @@ function Releted() {
   );
 }
 
-export default Releted;
+export default Salaad;

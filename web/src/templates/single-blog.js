@@ -17,6 +17,7 @@ import FeaturedBlogs from '../components/homePage/FeaturedBlogs';
 import Releted from '../components/homePage/Releted';
 import Reletes from './xiriir';
 import Fikir from '../components/homePage/Fikir';
+import Salaad from '../components/homePage/Salaad';
 
 export const postQuery = graphql`
   query SingleBlogQuery($id: String!) {
@@ -116,9 +117,9 @@ function SingleBlog({ data }) {
       </SingleBlogStyles>
       {blog.categories.map((item, index) => (
         <span key={item.slug.current}>
-          {item.title === 'Fikir' ? (
-            <Fikir />
-          ) : item.title === 'Aqoon guud' ? (
+          {item.title === 'Salaad' ? (
+            <Salaad />
+          ) : item.title === 'Dahaaradda' ? (
             <Releted />
           ) : (
             <p>" "</p>

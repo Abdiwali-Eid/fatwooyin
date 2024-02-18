@@ -25,7 +25,7 @@ function TopCategories() {
   const categories = data.allSanityFeatured.nodes[0].category;
   return (
     <TopCategoriesStyles>
-      <SectionTitle>Top Categories</SectionTitle>
+      <SectionTitle>Mowduucyada muhiimka ah</SectionTitle>
 
       <CategoryGrid categories={categories} />
     </TopCategoriesStyles>

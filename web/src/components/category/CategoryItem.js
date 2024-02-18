@@ -17,7 +17,7 @@ function CategoryItem({ title, description, slug }) {
         variant={buttonTypes.secondary}
         style={{ backgroundColor: '#79ade0' }}
       >
-        Explore Category
+        Gudaha u gal
       </Button>
     </CategoryItemStyles>
   );
