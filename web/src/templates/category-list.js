@@ -36,8 +36,9 @@ function Categories({ data, pageContext }) {
       <PageSpace top={80} bottom={100}>
         <div className="container">
           <PageHeader
-            title="All Categories"
-            description="This month will bring about the 88th Academy Awards. Starting in 1928, this prestigious award ceremony..."
+          style={{color: 'red'}}
+            title="dhammaan mowduucyadda"
+            description="halkaan waxaad ka helaysaa , dhamaan mowduucyadda websiteka ku jira."
           />
          
           <CategoryGrid categories={categories} />

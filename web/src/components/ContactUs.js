@@ -34,10 +34,6 @@ const Input = styled.input`
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  
-  @media screen and (min-width: 768px) {
-    width: 100%;
-  }
 `;
 
 const TextArea = styled.textarea`
@@ -47,10 +43,6 @@ const TextArea = styled.textarea`
   border-radius: 4px;
   height: 150px;
   box-sizing: border-box;
-  
-  @media screen and (min-width: 768px) {
-    width: 100%;
-  }
 `;
 
 const SubmitButton = styled.button`
@@ -62,38 +54,39 @@ const SubmitButton = styled.button`
   cursor: pointer;
   width: 100%;
   box-sizing: border-box;
-  
-  @media screen and (min-width: 768px) {
-    width: auto;
-  }
 `;
 
 const ContactForm = () => {
   const [showAlert, setShowAlert] = useState(false);
-  const form = React.useRef();
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_4rna5mw', 'template_aqf769g', form.current, {
+      .sendForm('service_4rna5mw', 'template_aqf769g', e.target, {
         publicKey: 'ut_aschmqjGgXsNFv',
       })
       .then(
         () => {
-          setShowAlert(true); // Show the alert on successful submission
+          setShowAlert(true);
+          setFormData({ name: '', email: '', message: '' }); // Reset form data
           console.log('SUCCESS!');
         },
         (error) => {
           console.log('FAILED...', error.text);
-        },
+        }
       );
   };
 
   return (
     <FormContainer>
       <FormTitle>Fadlan, halkaan ku qor su'aasha aad rabtid in lagaaga jawaabo</FormTitle>
-      <form onSubmit={sendEmail} ref={form}>
+      <form onSubmit={sendEmail}>
         {showAlert && (
           <Alert variant="success" onClose={() => setShowAlert(false)} dismissible>
             Successfully sent! Thanks for reaching out.
@@ -101,15 +94,22 @@ const ContactForm = () => {
         )}
         <FormGroup>
           <Label htmlFor="name">Name:</Label>
-          <Input type="text" id="name" name="name" required />
+          <Input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
         </FormGroup>
         <FormGroup>
           <Label htmlFor="email">Email:</Label>
-          <Input type="email" id="email" name="email" required />
+          <Input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
         </FormGroup>
         <FormGroup>
           <Label htmlFor="message">Message:</Label>
-          <TextArea id="message" name="message" rows="5" required />
+          <TextArea
+            id="message"
+            name="message"
+            rows="5"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          />
         </FormGroup>
         <SubmitButton type="submit">Submit</SubmitButton>
       </form>
