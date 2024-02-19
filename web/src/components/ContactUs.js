@@ -89,7 +89,7 @@ const ContactForm = () => {
       <form onSubmit={sendEmail}>
         {showAlert && (
           <Alert variant="success" onClose={() => setShowAlert(false)} dismissible>
-            Successfully sent! Thanks for reaching out.
+          Mahadsanid,Farriintaadu way na soo gaartay. Website-ka iyo Gmail-ka ayaad ka helaysaa jawaabta sida ugu dhaqsiyaha badan,          
           </Alert>
         )}
         <FormGroup>
