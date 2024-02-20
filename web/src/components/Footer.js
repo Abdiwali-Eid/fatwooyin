@@ -14,10 +14,7 @@ function Footer() {
         <div className='horizontal'>
             <Logo />
         <ParagraphText className="footer__text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat neque
-          commodi perspiciatis quibusdam delectus voluptas ab eos natus laborum!
-          Veritatis, facilis modi. Ex, adipisci. Ab, atque. Debitis officia qui
-          vero!
+        Fatwo waa website waxbarasho oo laga heli karo su'aalo iyo jawaabo diini ah, sidoo kalana ay dadku waydiin karaan su'aalaha diinta ku saabsan oo ay kaaga soo jawaabayaan culimo aqoon u leh.
         </ParagraphText>
         <ul className="footer__menuList">
           {menu.map((item) => (
