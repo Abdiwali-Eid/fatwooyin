@@ -7,7 +7,7 @@ export default styled(Link)`
   svg {
     font-size: 3rem;
     path {
-      stroke: white;
+      stroke: var(--grey);
     }
   }
 `;
