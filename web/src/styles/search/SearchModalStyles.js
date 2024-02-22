@@ -26,10 +26,10 @@ export const SearchModalStyles = styled.div`
       transform: translateY(-100%);
       top: -10px;
       right: 0;
-      border-color: crimson;
-      color: crimson;
+      border-color: rgb(85, 128, 170);
+      color: rgb(85, 128, 170);
       &:hover {
-        background-color: crimson;
+        background-color: rgb(85, 128, 170);
         color: var(--white);
       }
     }

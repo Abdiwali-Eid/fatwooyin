@@ -19,4 +19,8 @@ export const menu = [
     title: 'Suaalo',
     path: '/question',
   },
+  // {
+  //   title: 'tijaabo',
+  //   path: '/tijaabo',
+  // },
 ];

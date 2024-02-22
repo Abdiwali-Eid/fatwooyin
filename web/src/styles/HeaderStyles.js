@@ -102,11 +102,11 @@ export default styled.header`
           }
         }
         .mobileMenuCloseBtn {
-          color: crimson;
+          color: #070747;
           position: absolute;
           top: 10px;
           right: 10px;
-          border-color: crimson;
+          border-color: #070747;
           &:hover {
         
             color: var(--white);

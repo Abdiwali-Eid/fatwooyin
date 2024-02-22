@@ -8,7 +8,8 @@ export default styled.div`
   color: var(--primary);
   transition-property: color, background-color;
   transition: 0.3s ease;
-  display: flex;
+  display: flex; 
+  
   align-items: center;
   justify-content: center;
   svg {
