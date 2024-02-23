@@ -41,7 +41,7 @@ function SearchResult({
     <>
       {blogsResult.length > 0 && (
         <>
-          <ParagraphText>Blogs</ParagraphText>
+          <ParagraphText>Su'aalo</ParagraphText>
           {blogsResult.map((result) => (
             <BlogSearchResultItem key={result.id} blog={result} />
           ))}
