@@ -34,7 +34,7 @@ function SearchResult({
     // categoriesResult.length === 0 
     // authorsResult.length === 0
   ) {
-    return <ParagraphText>No Result Found.</ParagraphText>;
+    return <ParagraphText>Wax natiijo ah lama helin.</ParagraphText>;
   }
 
   return (
