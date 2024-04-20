@@ -35,6 +35,12 @@ module.exports = {
       },
     },
     {
+    resolve: `gatsby-plugin-postcss`,
+    options: {
+      // Add any PostCSS options here
+    },
+  },
+    {
       resolve: 'gatsby-plugin-styled-components',
     },
     {
