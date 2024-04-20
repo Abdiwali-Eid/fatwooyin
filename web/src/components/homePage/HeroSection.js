@@ -20,6 +20,9 @@ function HeroSection() {
             <Button to="/question" tag={Link} className="hero__button">
               Waydii su'aal
             </Button>
+            <h1 className="text-3xl font-bold underline bg-slate-900">
+        Hello world!
+      </h1>
           </div>
         </div>
       </div>

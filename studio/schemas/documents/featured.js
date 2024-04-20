@@ -27,6 +27,21 @@ export default {
       ],
     },
     {
+      name: 'author',
+      title: 'Featured Authors',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'author' }],
+        },
+      ],
+      validation: (Rule) => [
+        Rule.error('Every Item should be unique').unique(),
+        Rule.required().error('At least one item is required'),
+      ],
+    },
+    {
       name: 'category',
       title: 'Featured Top category',
       type: 'array',
