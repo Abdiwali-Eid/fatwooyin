@@ -13,7 +13,7 @@ const IndexPage = () => (
       <FeaturedBlogs />
       <TopCategories />
       <TopAuthors />
-     
+    
     </div>
   </>
 );
