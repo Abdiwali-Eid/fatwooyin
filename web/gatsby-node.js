@@ -46,16 +46,16 @@ exports.createPages = async ({ graphql, actions }) => {
   `);
 
   if (result.errors) throw result.errors;
-  const blogs = result.data.allSanityBlog.nodes;
+  const jawaab = result.data.allSanityBlog.nodes;
   const categories = result.data.allSanityCategory.nodes;
   const authors = result.data.allSanityAuthor.nodes;
 
   // single blogs pages
-  blogs.forEach((blog) => {
+  jawaab.forEach((jawaab) => {
     createPage({
-      path: `/blogs/${blog.slug.current}`,
+      path: `/jawaab/${jawaab.slug.current}`,
       component: singleBlogTemplate,
-      context: { id: blog.id },
+      context: { id: jawaab.id },
     });
   });
 
@@ -80,10 +80,10 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 
   // blogs paginated pages
-  const totalBlogListPages = Math.ceil(blogs.length / postsPerPage);
+  const totalBlogListPages = Math.ceil(jawaab.length / postsPerPage);
   Array.from({ length: totalBlogListPages }).forEach((_, index) => {
     createPage({
-      path: index === 0 ? `/blogs` : `/blogs/${index + 1}`,
+      path: index === 0 ? `/jawaab` : `/jawaab/${index + 1}`,
       component: blogListTemplate,
       context: {
         limit: postsPerPage,

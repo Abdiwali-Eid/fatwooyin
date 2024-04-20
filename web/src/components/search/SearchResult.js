@@ -34,14 +34,14 @@ function SearchResult({
     // categoriesResult.length === 0 
     // authorsResult.length === 0
   ) {
-    return <ParagraphText>No Result Found.</ParagraphText>;
+    return <ParagraphText>Wax natiijo ah lama helin.</ParagraphText>;
   }
 
   return (
     <>
       {blogsResult.length > 0 && (
         <>
-          <ParagraphText>Blogs</ParagraphText>
+          <ParagraphText>Su'aalo</ParagraphText>
           {blogsResult.map((result) => (
             <BlogSearchResultItem key={result.id} blog={result} />
           ))}

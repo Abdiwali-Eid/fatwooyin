@@ -5,7 +5,7 @@ export const menu = [
   },
   {
     title: 'Jawaabo',
-    path: '/blogs',
+    path: '/jawaab',
   },
   {
     title: 'Mawduucyo',
@@ -19,8 +19,10 @@ export const menu = [
     title: 'Suaalo',
     path: '/question',
   },
-  // {
-  //   title: 'tijaabo',
-  //   path: '/tijaabo',
-  // },
+
+  
+  {
+    title: 'tijaabo',
+    path: '/tijaabo',
+  },
 ];

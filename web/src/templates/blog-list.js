@@ -37,13 +37,13 @@ export const BlogsQuery = graphql`
   }
 `;
 
-function Blogs({ data, pageContext }) {
+function Jawaab({ data, pageContext }) {
   const { currentPage, numberOfPages } = pageContext;
   const blogs = data.allSanityBlog.nodes;
 
   return (
     <>
-      <SEO title="Blogs" />
+      <SEO title="Jawaab" />
       <PageSpace top={80} bottom={100}>
         <div className="container">
           <PageHeader
@@ -55,7 +55,7 @@ function Blogs({ data, pageContext }) {
             <Pagination
               currentPage={currentPage}
               numberOfPages={numberOfPages}
-              baseURL="/blogs"
+              baseURL="/jawaab"
             />
           )}
         </div>
@@ -64,4 +64,4 @@ function Blogs({ data, pageContext }) {
   );
 }
 
-export default Blogs;
+export default Jawaab;

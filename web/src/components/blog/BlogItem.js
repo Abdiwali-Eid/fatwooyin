@@ -9,7 +9,7 @@ import { Title } from '../typography/Title';
 function BlogItem({ path, title, image, categories, author }) {
   return (
     <BlogItemStyles>
-      <Link to={`/blogs/${path}`}>
+      <Link to={`/jawaab/${path}`}>
         {/* <GatsbyImage
           image={image.imageData}
           alt={image.altText}
@@ -17,7 +17,7 @@ function BlogItem({ path, title, image, categories, author }) {
         /> */}
       </Link>
       <div className='ciwaan'>
-  <Link to={`/blogs/${path}`}>
+  <Link to={`/jawaab/${path}`}>
         <Title className="title">{title}</Title>
       </Link>
       </div>
