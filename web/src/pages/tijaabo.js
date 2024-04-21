@@ -1,7 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-export const tijaabo = () => {
+const Tijaabo = () => {
   return (
-    <div>tijaabo</div>
-  )
-}
+    <div>
+      <h1>Tijaabo Page</h1>
+      {/* Your page content goes here */}
+    </div>
+  );
+};
+
+export default Tijaabo;

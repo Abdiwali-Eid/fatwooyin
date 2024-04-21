@@ -21,8 +21,4 @@ export const menu = [
   },
 
   
-  {
-    title: 'tijaabo',
-    path: '/tijaabo',
-  },
 ];
