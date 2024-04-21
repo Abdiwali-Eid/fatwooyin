@@ -19,7 +19,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    'gatsby-plugin-postcss',
+  
     {
       resolve: 'gatsby-source-sanity',
       options: {
@@ -34,12 +34,7 @@ module.exports = {
         shortname: `maqaal`,
       },
     },
-    {
-    resolve: `gatsby-plugin-postcss`,
-    options: {
-      // Add any PostCSS options here
-    },
-  },
+
     {
       resolve: 'gatsby-plugin-styled-components',
     },
