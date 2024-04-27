@@ -1,25 +1,25 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTelegram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 export const socialLinks = [
   {
     name: 'youtube',
-    url: 'https://www.youtube.com/',
+    url: 'https://www.youtube.com/@DRSHKHADARXASANAXMED',
     icon: <FaYoutube />,
   },
   {
     name: 'instagram',
-    url: 'https://www.youtube.com/',
-    icon: <FaInstagram />,
+    url: 'https://t.me/drkhadarxasan',
+    icon: <FaTelegram />,
   },
   {
     name: 'facebook',
-    url: 'https://www.facebook.com/profile.php?id=100022010565081',
+    url: 'https://www.facebook.com/drkhadarxasan/',
     icon: <FaFacebook />,
   },
   {
     name: 'twitter',
-    url: 'https://twitter.com/CabdiwaliBashir',
+    url: 'https://twitter.com/',
     icon: <FaTwitter />,
   },
 ];
