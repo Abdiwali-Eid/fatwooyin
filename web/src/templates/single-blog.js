@@ -19,7 +19,7 @@ import Releted from '../components/homePage/Releted';
 import Reletes from './xiriir';
 import Fikir from '../components/homePage/Fikir';
 import Salaad from '../components/homePage/Salaad';
-import Soon from '../components/homePage/soon';
+
 import Sakadda from '../components/homePage/Sakadda';
 import Fatwo from '../components/homePage/Fatwoguud';
 import Soons from '../components/homePage/Soons';
