@@ -5,6 +5,7 @@ import React from 'react';
 // import { DiscussionEmbed } from 'disqus-react';
 import { format } from 'date-fns';
 import { BiCategory } from 'react-icons/bi';
+import { BiAperture } from "react-icons/bi";
 import { FiCalendar, FiUser } from 'react-icons/fi';
 import PageSpace from '../components/PageSpace';
 import ParagraphText from '../components/typography/ParagraphText';
@@ -93,7 +94,7 @@ function SingleBlog({ data }) {
                   {format(new Date(blog.publishedAt), 'p, MMMM dd, yyyy')}
                 </ParagraphText>
                 <ParagraphText className="categoriesText">
-                  <BiCategory />
+                  <BiAperture />
                   <span>
                     {blog.categories.map((item, index) => (
                       <span key={item.slug.current}>
