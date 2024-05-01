@@ -8,8 +8,8 @@ export const socialLinks2 = [
     icon: <FaYoutube />,
   },
   {
-    name: 'instagram',
-    url: 'https://www.youtube.com/',
+    name: 'telegram',
+    url: 'https://t.me/Turaasculimo/29542',
     icon: <FaInstagram />,
   },
   {

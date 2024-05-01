@@ -9,6 +9,9 @@ import { Title } from '../components/typography/Title';
 import { SingleAuthorStyles } from '../styles/author/SingleAuthorStyles';
 import { socialLinks } from '../constants/socialLinks';
 import { socialLinks2 } from '../constants/socialLinks2';
+import { maxamud } from '../constants/maxamud';
+import { dirir } from '../constants/macalin';
+import { daud } from '../constants/daud';
 
 export const authorQuery = graphql`
   query SingleAuthorQuery($id: String!) {
@@ -57,6 +60,12 @@ function SingleAuthor({ data }) {
       ? socialLinks
       : author.name === 'Sh Maxamed Cabdi Umal'
       ? socialLinks2
+      : author.name === 'Sh Xasan Macallin Daauud'
+      ? daud
+      : author.name === 'Sh Maxamuud Shibli'
+      ? maxamud
+      : author.name === 'Sh Maxamed Cumar Dirir'
+      ? dirir
       : [];
 
   return (

@@ -32,7 +32,7 @@ const authors= data.allSanityFeatured.nodes[0].author;
   return (
 <>
 <SectionTitle style={{'marginTop':40}}>
-    Qoraayaasheenna
+    Culimada
   </SectionTitle>
 <AuthorGrid authors={authors} />
 <SectionTitle>

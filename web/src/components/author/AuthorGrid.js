@@ -1,10 +1,12 @@
 import React from 'react';
 import { AuthorGridStyles } from '../../styles/author/AuthorGridStyles';
 import AuthorItem from './AuthorItem';
+import { Authorgridhome } from '../../styles/author/Authorgridhome';
 
 function AuthorGrid({ authors }) {
   return (
-    <AuthorGridStyles>
+    <Authorgridhome>
+
       {authors.map((item) => (
         <AuthorItem
           key={item.id}
@@ -13,7 +15,7 @@ function AuthorGrid({ authors }) {
           profileImage={item.profileImage}
         />
       ))}
-    </AuthorGridStyles>
+    </Authorgridhome>
   );
 }
 
