@@ -23,6 +23,8 @@ import Salaad from '../components/homePage/Salaad';
 import Sakadda from '../components/homePage/Sakadda';
 import Fatwo from '../components/homePage/Fatwoguud';
 import Soons from '../components/homePage/Soons';
+import Xaj from '../components/homePage/Xaj';
+import Qoyska from '../components/homePage/Qoyska';
 
 export const postQuery = graphql`
   query SingleBlogQuery($id: String!) {
@@ -132,7 +134,11 @@ function SingleBlog({ data }) {
             <Fatwo />
           ): item.title === 'Soon' ? (
             <Soons />
-          ): (
+          ):  item.title === 'Xaj' ? (
+            <Xaj />
+          ): item.title === 'Qoyska' ? (
+            <Qoyska />
+          ):(
             <p>" "</p>
           )}
         </span>

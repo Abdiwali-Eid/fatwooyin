@@ -21,6 +21,7 @@ function BlogGrid({ blogs }) {
 
           />
         ))}
+        
     </BlogGridStyles>
   );
 }
