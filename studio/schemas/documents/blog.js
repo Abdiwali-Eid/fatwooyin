@@ -55,6 +55,12 @@ export default {
       description: 'A short description of the blog post',
     },
     {
+      title: 'Featured',
+      name: 'featured',
+      type: 'normalText',
+      description: 'A short description of the blog post',
+    },
+    {
       title: 'Blog Body',
       name: 'body',
       type: 'richText',

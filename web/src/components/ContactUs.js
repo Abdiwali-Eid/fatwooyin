@@ -93,7 +93,7 @@ const ContactForm = () => {
           </Alert>
         )}
         <FormGroup>
-          <Label htmlFor="name">Name:</Label>
+          <Label htmlFor="name">Magacaaga:</Label>
           <Input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
         </FormGroup>
         <FormGroup>
@@ -101,7 +101,7 @@ const ContactForm = () => {
           <Input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
         </FormGroup>
         <FormGroup>
-          <Label htmlFor="message">Message:</Label>
+          <Label htmlFor="message">Su'aasha:</Label>
           <TextArea
             id="message"
             name="message"

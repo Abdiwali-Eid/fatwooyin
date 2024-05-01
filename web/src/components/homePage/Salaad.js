@@ -10,6 +10,8 @@ function Salaad() {
     {
       allSanityBlog(
         filter: { categories: { elemMatch: { title: { eq: "Salaad" } } } }
+        sort: { fields: publishedAt, order: DESC }
+        limit: 4
       ) {
         nodes {
           title
